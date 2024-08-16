@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahul's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <header>
+
+            <div class="logo">
+                <a href="index.html" class="logo-link">
+                    RK
+                </a>
+            </div>
+            
+            
+            <nav>
+                <a href="page2.html">About Me</a>
+            </nav>
+
+        </header>
+
+        <main>
+
+            <section class="intro">
+                <h1>Hello, I'm <span class="highlight"> Rahul Kumar.</span></h1>
+                <p>I'm a <span id="dynamic-text" class="highlight"></span> from India.</p>
+                <button class="projects-button" onclick="location.href='page3.html'">See My Projects</button>
+            </section>
+
+        </main>
+
+        <footer>
+            <div class="menu-container">
+                <div class="menu-icon" onclick="toggleMenu()">☰</div>
+                <div class="pagination">
+                    <span class="page-number active" data-page="1" onclick="navigateToPage(1)">Home</span>
+                    <span class="page-number" data-page="2" onclick="navigateToPage(2)">About</span>
+                    <span class="page-number" data-page="3" onclick="navigateToPage(3)">Projects</span>
+                    <span class="page-number" data-page="4" onclick="navigateToPage(4)">Services</span>
+                </div>
+            </div>
+            <div class="social-container">
+                <div class="social-text" onclick="toggleSocial()">Social</div>
+                <div class="social-icons">
+                    <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+                    <a href="https://behance.net" target="_blank">Behance</a>
+                    <a href="https://twitter.com" target="_blank">Twitter</a>
+                    <a href="https://dribbble.com" target="_blank">Dribbble</a>
+                    <a href="https://instagram.com" target="_blank">Instagram</a>
+                </div>
+            </div>
+        </footer>
+        
+
+    </div>
+    
+
+    <script src="script.js"></script>
+    <script src="footer.js"></script>
+    <script src="navigation.js"></script>
+    
+</body>
+</html>
